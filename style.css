@@ -1,0 +1,98 @@
+body{   
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+.container::before {
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    background: url('bg-image.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0,.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.heading {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+.heading p {
+    color: rgb(163, 163, 163);
+
+}
+
+
+#myForm {
+    width: 70vw;
+    height: 30vh;
+    background-color: rgba(113, 113, 113, 0.829);
+    box-shadow: 1px 1px 5px 1px rgba(49, 49, 49, 0.511);
+    border-radius: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 7rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgb(218, 218, 218);
+    color: rgb(28, 28, 28);
+    outline-color: rgb(53, 255, 174);
+    /* outline-style: none; */
+    margin: 0rem 1rem 0rem .5rem;
+    border-radius: .3rem;
+    border: 1.5px solid rgb(65, 65, 65);
+    box-shadow: .3px .3px 3px 1px rgb(185, 185, 185);
+
+}
+
+input#domain {
+    width: 10rem;
+}
+
+label {
+    font-size: 1rem;
+
+}
+
+input::placeholder {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    color: rgb(87, 87, 87);
+    text-align: center;
+}
+
+.btn a {
+    border-radius: .5rem;
+    padding: .6rem 1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(53, 255, 174);
+    border-radius: .5rem;
+    box-shadow: .5px .5px 2px 1px rgba(96, 255, 191, 0.847);
+}
